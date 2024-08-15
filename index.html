@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {  margin: 0 }
+        body 
+        {
+            background-image: url("https://cdn.cancercenter.com/-/media/ctca/images/feature-block-images/medical-illustrations/coh-lymph-nodes-illustration-feature-dtm.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .lymph-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(249 243 243);
+            font-size: 18px;
+            font-family: sans-serif;
+            background-color: hsl(0deg 0.92% 2.49%);
+            padding: 20px;
+            opacity: .7;
+        }
+
+        .lymph-form input,
+        .lymph-form select,
+        .lymph-form textarea {
+            border: none;
+            padding: 5px;
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+
+        .head1{
+            font-family: sans-serif;
+            background-color: hsl(0, 0%, 5%);
+            padding: 50px;
+            opacity: .7;         
+            color: rgb(249 243 243);
+
+        }
+        .head2{
+            font-family: sans-serif;
+            background-color: hsl(0, 0%, 5%);
+            padding: 20px;
+            opacity: .7;
+            color: rgb(249 243 243);
+        }
+        .head3{
+            font-family: sans-serif;
+            background-color: hsl(0, 0%, 5%);
+            font-size: 30px;
+            opacity: .7;
+            color: rgb(249 243 243);
+            padding-right: 40px;
+
+        }
+        .text{
+            font-size: 20px;
+        }
+        .head_text{
+            font-size: 40px;
+        }
+        .output{
+            font-size: 80px;
+            opacity: .7;         
+            color: rgb(249 243 243);
+            margin: 80px;
+            background-color: hsl(0, 0%, 5%);
+        }
+    </style>
+</head>
+<body>
+    <div class="head1">
+        <center><h1 class="head_text">LYMPHOGRAPHY CLASSIFICATION</h1></center>
+    </div>
+    <div class="head2">
+        <center><p class="text">Lymphography, also known as lymphangiography or lymphogram, is a diagnostic imaging procedure used to visualize the lymphatic system in the human body. The lymphatic system is a network of vessels and nodes that help transport lymph, a clear fluid that contains white blood cells and plays a crucial role in immune function.
+
+            Lymphography involves the injection of a contrast agent (a special dye) into the lymphatic vessels, typically in the foot or hand. This contrast agent allows the radiologist to track the flow of lymph throughout the lymphatic system using X-ray or other imaging techniques. Lymphography can be used to identify blockages, abnormalities, or diseases affecting the lymphatic system.
+            
+            Lymphography has been used historically to diagnose and study conditions such as lymphedema (swelling caused by lymphatic fluid buildup), lymphatic malformations, and certain types of cancer that may spread through the lymphatic system. However, in recent years, other imaging methods like MRI and CT scans have largely replaced lymphography due to their non-invasive nature and ability to provide detailed information about the lymphatic system without the need for contrast agents.</p></center>
+    </div>
+    <div class="head3"><center>Let's begin the diagnosis<center></div>
+    <div class="container">
+    <center>
+        <form name="lymph" class="lymph-form" action="/login" method="POST">
+            <table>
+                <tr>
+                    <td><label for="lymphatics">lymphatics</label></td>
+                    <td>
+                      <select name="lymphatics" id="lymphatics">
+                        <option value="">Select</option>
+                        <option value="normal">normal</option>
+                        <option value="arched">arched</option>
+                        <option value="deformed">deformed</option>
+                        <option value="displaced">displaced</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="block_of_affere">block of affere</label></td>
+                    <td>
+                      <select name="block_of_affere" id="block_of_affere">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bl._of_lymph._c">bl. of lymph. c</label></td>
+                    <td>
+                      <select name="bl._of_lymph._c" id="bl._of_lymph._c">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bl._of_lymph._s">bl. of lymph. s</label></td>
+                    <td>
+                      <select name="bl._of_lymph._s" id="bl._of_lymph._s">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="by_pass">by pass</label></td>
+                    <td>
+                      <select name="by_pass" id="by_pass">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="extravasates">extravasates</label></td>
+                    <td>
+                      <select name="extravasates" id="extravasates">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="regeneration">regeneration</label></td>
+                    <td>
+                      <select name="regeneration" id="regeneration">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="early_uptake_in">early uptake in</label></td>
+                    <td>
+                      <select name="early_uptake_in" id="early_uptake_in">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lym.nodes_dimin">lym.nodes dimin</label></td>
+                    <td>
+                      <select name="lym.nodes_dimin" id="lym.nodes_dimin">
+                        <option value="">Select</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lym.nodes_enlar">lym.nodes enlar</label></td>
+                    <td>
+                      <select name="lym.nodes_enlar" id="lym.nodes_enlar">
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="changes_in_lym">changes in lym</label></td>
+                    <td>
+                      <select name="changes_in_lym" id="changes_in_lym">
+                        <option value="">Select</option>
+                        <option value="bean">bean</option>
+                        <option value="oval">oval</option>
+                        <option value="round">round</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="defect_in_node">defect in node</label></td>
+                    <td>
+                      <select name="defect_in_node" id="defect_in_node">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="lacunar">lacunar</option>
+                        <option value="lac. marginal">lac. marginal</option>
+                        <option value="lac. central">lac. central</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="changes_in_node">changes in node</label></td>
+                    <td>
+                      <select name="changes_in_node" id="changes_in_node">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="lacunar">lacunar</option>
+                        <option value="lac. marginal">lac. marginal</option>
+                        <option value="lac. central">lac. central</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="changes_in_stru">changes in stru</label></td>
+                    <td>
+                      <select name="changes_in_stru" id="changes_in_stru">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="grainy">grainy</option>
+                        <option value="drop-like">drop-like</option>
+                        <option value="coarse">coarse</option>
+                        <option value="diluted">diluted</option>
+                        <option value="reticular">reticular</option>
+                        <option value="stripped">stripped</option>
+                        <option value="faint">faint</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="special_forms">special forms</label></td>
+                    <td>
+                      <select name="special_forms" id="special_forms">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="chalices">chalices</option>
+                        <option value="vesicles">vesicles</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dislocation_of">dislocation of</label></td>
+                    <td>
+                      <select name="dislocation_of" id="dislocation_of">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="exclusion_of_no">exclusion of no</label></td>
+                    <td>
+                      <select name="exclusion_of_no" id="exclusion_of_no">
+                        <option value="">Select</option>
+                        <option value="no">no</option>
+                        <option value="yes">yes</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="no_of_nodes_in">no of nodes in</label></td>
+                    <td>
+                      <select name="no_of_nodes_in" id="no_of_nodes_in">
+                        <option value="">Select</option>
+                        <option value="0-9">0-9</option>
+                        <option value="10-19">10-19</option>
+                        <option value="20-29">20-29</option>
+                        <option value="30-39">30-39</option>
+                        <option value="40-49">40-49</option>
+                        <option value="50-59">50-59</option>
+                        <option value="60-69">60-69</option>
+                        <option value=">=70">=70</option>
+                      </select>
+                    </td>
+                </tr>
+            </table>
+            
+              <center><input type="submit" value="submit"></center>
+              <center class="output"><p><b>{{y}}<b></p></center>
+        </form>
+    </center>
+    </div>
+</body>
+</html>
